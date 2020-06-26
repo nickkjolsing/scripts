@@ -13,8 +13,9 @@
 # --prefer-free-formats     : Prefers free formats? 
 
 
-# "-s  \"                   : SIMULATE MODE
+# -s                        : SIMULATE MODE
 # Config file save location: /etc/youtube-dl.conf
+
 
 echo "---------------------------------------------"
 echo "-------Youtube Channel Download Script-------"
