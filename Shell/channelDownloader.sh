@@ -22,8 +22,10 @@ echo "-------Youtube Channel Download Script-------"
 echo "---------------------------------------------"
 echo "Enter YouTube Channel URL: "
 read youtubeURL
+echo ""
 echo "This will download all videos on the channel entered above...continue? (Y/N)"
 read yesNo
+echo ""
 if [ $yesNo = "Y" ] || [ $yesNo = "y" ]; then
     youtube-dl -f 136 --abort-on-error --yes-playlist -r 1.0M -R 4 --restrict-filenames -w --write-info-json --prefer-free-formats -o "%(title)s.%(ext)s" $youtubeURL
 else
